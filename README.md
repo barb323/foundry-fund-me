@@ -62,6 +62,10 @@ Once deployed, you can interact with the contract (e.g., funding it) using the i
 ```bash
 forge script script/Interactions.s.sol:FundFundMe --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
 ```
+```bash
+forge script script/Interactions.s.sol:WithdrawFundMe --rpc-url $RPC_URL --private-key $PRIVATE_KEY
+```
+
 ## License
 This project is licensed under the MIT License.
 
