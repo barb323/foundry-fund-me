@@ -63,7 +63,7 @@ Once deployed, you can interact with the contract:
 cast send <CONTRACT_ADRESSE> "fund()" --value 0.1ether --rpc-url $RPC_URL --private-key $PRIVATE_KEY
 ```
 ```bash
-cast send <CONTRACT_ADRESSE> "withdraw()" --rpc-url RPC_URL --private-key $PRIVATE_KEY
+cast send <CONTRACT_ADRESSE> "withdraw()" --rpc-url $RPC_URL --private-key $PRIVATE_KEY
 ```
 ### 6.Interactions
 Once deployed, you can interact with the contract (e.g., funding it) using the interactions script:
