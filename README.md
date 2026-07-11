@@ -57,10 +57,18 @@ Load your environment variables and execute the deployment script:
 source .env
 forge script script/DeployFundMe.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast 
 ```
-### 5.Interactions
+### 5. Funktion call
+Once deployed, you can interact with the contract:
+```bash
+cast send <CONTRACT_ADRESSE> "fund()" --value 0.1ether --rpc-url $RPC_URL --private-key $PRIVATE_KEY
+```
+```bash
+cast send <CONTRACT_ADRESSE> "withdraw()" --rpc-url RPC_URL --private-key $PRIVATE_KEY
+```
+### 6.Interactions
 Once deployed, you can interact with the contract (e.g., funding it) using the interactions script:
 ```bash
-forge script script/Interactions.s.sol:FundFundMe --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
+forge script script/Interactions.s.sol:FundFundMe --rpc-url c --private-key $PRIVATE_KEY --broadcast
 ```
 ```bash
 forge script script/Interactions.s.sol:WithdrawFundMe --rpc-url $RPC_URL --private-key $PRIVATE_KEY
